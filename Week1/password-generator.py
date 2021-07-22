@@ -16,15 +16,12 @@ syms = all_strings[62:94]
 def lowerLetters(lower):
     # return a list of 2 random lowerCase letters
     return random.choices(lower, k=2)
-
 def upperLetters(upper):
     # return a list of 2 random upperCase letters
     return random.choices(upper, k=2)
-
 def numbers(vals):
     # return a list 2 digits of type string
     return random.choices(vals, k=2)
-
 def symbols(syms):
     # return a list of 2 random symbols 'space' excluded
     return random.choices(syms, k=2)
