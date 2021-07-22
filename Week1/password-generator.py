@@ -1,12 +1,10 @@
 #! /usr/bin/python3
-import string
-import random
-
+import string, random
 # A helper function to split a string
 def split(all):
     return [char for char in all]
-all_strings = split(string.printable)
 
+all_strings = split(string.printable)
 # create lists to store each type of string
 digits = all_strings[0:10]
 lowerCase = all_strings[10:36]
