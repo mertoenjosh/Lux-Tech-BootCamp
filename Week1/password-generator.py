@@ -13,6 +13,7 @@ lowerCase = all_strings[10:36]
 upperCase = all_strings[36:62]
 syms = all_strings[62:94]
 
+# A helper that returns two random numbers from a collection passed
 def twoRandoms(coll):
     # return a list of 2 random lowerCase letters
     return random.choices(coll, k=2)
