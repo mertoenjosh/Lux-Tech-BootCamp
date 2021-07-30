@@ -15,9 +15,7 @@ syms = all_strings[62:94]
 
 # A helper that returns two random numbers from a collection passed
 def twoRandoms(coll):
-    # return a list of 2 random lowerCase letters
     return random.choices(coll, k=2)
-
 
 # concatenate the returned strings in to one string
 temp = twoRandoms(lowerCase) + twoRandoms(upperCase) + twoRandoms(digits) + twoRandoms(syms)
