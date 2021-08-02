@@ -14,14 +14,23 @@ Label(root, text = 'Youtube Video Downloader', font='arial 20 bold').pack()
 link = StringVar()
 
 Label(root, text = 'Paste Link Here: ', font='arial 15 bold').place(x=160, y=60)
-lint_enter = Entry(root, width = 70, textvariable = link).place(x = 32, y = 90)
+text_box = Entry(root, width = 50, textvariable = link).place(x = 32, y = 100)
 
-def downloader():
+def download():
     url = YouTube(str(link.get()))
     video = url.streams.first()
     video.download()
     Label(root, text = 'DOWNLOADED', font='arial 15').place(x=180, y=210)
 
-Button(root,text = 'DOWNLOAD', font='arial 15 bold', bg='pale violet red', padx = 2, command = downloader).place(x = 180, y = 150)
+Button(root,text = 'DOWNLOAD', font='arial 15 bold', bg='skyblue', padx = 2, command = download).place(x = 180, y = 150)
 
 root.mainloop()
+
+# url = input('video url: ')
+# print('downloading...')
+
+# yt = YouTube(url)
+
+# video = yt.streams.get_by_resolution("720p")
+# video.download(output_path='/temp')
+# print('downloaded')
