@@ -18,7 +18,7 @@ text_box = Entry(root, width = 50, textvariable = link).place(x = 32, y = 100)
 
 def download():
     url = YouTube(str(link.get()))
-    video = url.streams.first()
+    video = url.streams.get_by_resolution("720p")
     video.download()
     Label(root, text = 'DOWNLOADED', font='arial 15').place(x=180, y=210)
 
@@ -26,11 +26,3 @@ Button(root,text = 'DOWNLOAD', font='arial 15 bold', bg='skyblue', padx = 2, com
 
 root.mainloop()
 
-# url = input('video url: ')
-# print('downloading...')
-
-# yt = YouTube(url)
-
-# video = yt.streams.get_by_resolution("720p")
-# video.download(output_path='/temp')
-# print('downloaded')
