@@ -15,3 +15,8 @@ Use a python script to generate a random password of 8 characters long and will 
 ## Testing the script
 
 ![screenshot](Week1/Screenshot_20210722_161457.png)
+
+
+## Week 2 Youtube Downloader
+
+![screenshot](week2/yt-dwn.png)
