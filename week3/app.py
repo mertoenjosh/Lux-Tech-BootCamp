@@ -3,11 +3,6 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-# set configs
-# app.config['MYSQL_HOST'] = 'localhost'
-# app.config['MYSQL_USER'] = 'wiz'
-# app.config['MYSQL_PASSWORD'] = 'kameoDB'
-# app.config['MYSQL_DB'] = 'flask_test'
 app.config.from_pyfile('settings.py')
 
 mysql = MySQL(app)
